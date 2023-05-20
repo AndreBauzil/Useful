@@ -1,0 +1,43 @@
+
+# New Repo
+    mkdir myDirName    #this is the name of your directory
+    cd /myDirName
+    git init
+    touch readME.md   #this is to create an initial file to push
+    // git add .
+    git commit -m "enter commit message here"
+    git remote add origin https://github.com/AndreBauzil/myDirName.git
+    git push origin main/master
+
+# Commit & Add
+    git add .
+    git commit -m "enter commit message here"
+    git commit -a       // commit all changes locally
+    git commit --amend  // changes last commit
+
+    git revert <commitNum>      // creates new commit to revert specified commit
+
+# Fetch
+    git fetch <remote>
+
+# Push & Pull
+    git pull <remote> <branch>        // Pulls newer version of a fetch from the remote branch/repo
+    git push <remote> <branch>        // Pushes a new version to the remote branch/repo
+
+# Branches
+    git branch <newBranchName>
+    git branch -a       // Shows all branches
+
+    git rebase <branch>         // Rebase the HEAD onto the specified branch
+
+    git merge <lastEditBranch>      // Merge(unites) the specified branch into the current branch
+
+    ## Remote
+        git remote add origin https://github.com/AndreBauzil/newRepo.git  // Links the url to a new remote branch
+        git remote -v    // Show remote branches
+
+    ## Rename a Branch in Git
+        git checkout branch-name        // switch to another branch
+
+        git branch -m new-branch-name   // change the name
+
